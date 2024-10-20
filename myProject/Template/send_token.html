@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa; /* Light background color */
+        }
+
+        .message-container {
+            margin-top: 100px; /* Space from the top */
+            padding: 30px;
+            border-radius: 5px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff; /* White background for the message box */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-6 message-container text-center">
+                <h1>Success!</h1>
+                <p>Your token has been sent to your email. Please check your inbox.</p>
+                <a href="{% url 'signInPage' %}" class="btn btn-primary">Go to Sign In</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies (optional) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+        
+    {% block title %}
+    {% endblock %}
+    <head>
+    </head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 2rem;
+        }
+        
+        .logo h1 {
+            font-size: 24px;
+        }
+        
+        .nav-links {
+            list-style: none;
+        }
+        
+        .nav-links li {
+            display: inline;
+            margin-left: 20px;
+        }
+        
+        .nav-links a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        
+        .hero {
+            background: url('hero-image.jpg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+        }
+        
+        .hero-content h2 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        
+        .hero-content p {
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+        
+        .btn {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            font-size: 20px;
+            border-radius: 5px;
+        }
+        
+        .about, .services, .contact {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: auto;
+            text-align: center;
+        }
+        
+        .about h2, .services h2, .contact h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        
+        .service-box {
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            margin: 20px;
+            display: inline-block;
+            width: 30%;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #333;
+            color: #fff;
+        }
+        
+    </style>
+
+</head>
+    <header>
+        {% include 'navbar.html' %}
+    </header>
+    
+<body>
+
+    
+    {% block body %}
+        
+    {% endblock body %}
+        
+
+    
+
+</body>
+</html>
